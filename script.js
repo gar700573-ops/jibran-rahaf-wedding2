@@ -35,9 +35,15 @@ loading.remove();
 /* ================= Elements ================= */
 
 
+
+
 const envelope=document.getElementById("envelope");
 
-const envelopeTop=document.querySelector(".envelopeTop");
+const envelopeScreen=document.getElementById("envelope-screen");
+
+const flap=document.querySelector(".flap");
+
+const seal=document.getElementById("open-btn");
 
 const letter=document.querySelector(".letter");
 
@@ -63,8 +69,10 @@ let musicPlaying=false;
 /* ================= Open Envelope ================= */
 
 
+/* ================= Open Envelope ================= */
 
-envelope.addEventListener("click",()=>{
+
+seal.addEventListener("click",()=>{
 
 
 if(opened)return;
@@ -82,13 +90,11 @@ openSound.play();
 
 
 
-
 // تشغيل الموسيقى
 
 music.volume=.35;
 
 music.play();
-
 
 musicPlaying=true;
 
@@ -97,31 +103,13 @@ soundBtn.innerHTML="🔊";
 
 
 
+// فتح الظرف الاحترافي
 
-// فتح الغطاء
-
-
-envelopeTop.style.transform=
-"rotateX(180deg)";
+envelopeScreen.classList.add("open");
 
 
 
-// خروج الرسالة
-
-letter.style.transform=
-"translateY(-170px)";
-
-
-
-// تكبير الظرف
-
-envelope.style.transform=
-"scale(1.1)";
-
-
-
-
-// ألعاب نارية
+// الألعاب النارية
 
 setTimeout(()=>{
 
@@ -136,27 +124,39 @@ fireworks();
 
 
 
-// الانتقال للصفحة
+// Zoom سينمائي
+setTimeout(()=>{
+
+
+envelopeScreen.classList.add("zoom");
+
+
+},2000);
+
+
+
+// دخول الموقع
 
 setTimeout(()=>{
 
 
+envelopeScreen.style.display="none";
+
+
 window.scrollTo({
 
-top:
-document.getElementById("home").offsetTop,
+top:document.getElementById("home").offsetTop,
 
 behavior:"smooth"
 
 });
 
 
-},2200);
+},4000);
 
 
 
 });
-
 
 
 
@@ -555,8 +555,8 @@ setInterval(createHeart,1500);
 
 
 
-let weddingDate=
-new Date("2026-10-10 19:00:00").getTime();
+let weddingDate =
+new Date("2026-08-09 19:00:00").getTime();
 
 
 
