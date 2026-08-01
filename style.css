@@ -1218,3 +1218,194 @@ opacity:0;
 
 
 }
+
+/* ===============================
+   Responsive Design
+================================= */
+
+@media (max-width:1024px){
+
+.heroOverlay h1{
+font-size:60px;
+}
+
+.imageOverlay h1{
+font-size:60px;
+}
+
+.glass{
+width:90%;
+padding:40px;
+}
+
+}
+
+
+@media (max-width:768px){
+
+section{
+padding:40px 20px;
+min-height:auto;
+}
+
+.envelope{
+width:320px;
+height:220px;
+}
+
+.letter{
+width:260px;
+height:170px;
+left:30px;
+}
+
+.letter h1,
+.letter h2{
+font-size:28px;
+}
+
+.letter p{
+font-size:16px;
+}
+
+.heroOverlay h3{
+font-size:18px;
+}
+
+.heroOverlay h1{
+font-size:42px;
+}
+
+.heroOverlay span{
+font-size:40px;
+}
+
+.heroOverlay p{
+font-size:18px;
+text-align:center;
+padding:0 15px;
+}
+
+.glass{
+width:95%;
+padding:30px 20px;
+}
+
+.glass h2{
+font-size:34px;
+}
+
+.glass p{
+font-size:18px;
+line-height:2;
+}
+
+.imageOverlay h1{
+font-size:45px;
+}
+
+.imageOverlay span{
+font-size:42px;
+}
+
+.card{
+width:100%;
+max-width:320px;
+}
+
+.countdownSection h1{
+font-size:36px;
+}
+
+#countdown{
+gap:15px;
+}
+
+#countdown div{
+width:110px;
+height:110px;
+}
+
+#countdown span{
+font-size:32px;
+}
+
+#countdown p{
+font-size:16px;
+}
+
+.end h1{
+font-size:42px;
+}
+
+.end p{
+font-size:20px;
+}
+
+#soundBtn{
+width:55px;
+height:55px;
+font-size:22px;
+bottom:20px;
+left:20px;
+}
+
+}
+
+
+@media (max-width:480px){
+
+.heroOverlay h1{
+font-size:34px;
+}
+
+.heroOverlay span{
+font-size:30px;
+}
+
+.heroOverlay p{
+font-size:16px;
+}
+
+.envelope{
+width:280px;
+height:190px;
+}
+
+.letter{
+width:220px;
+height:150px;
+left:30px;
+}
+
+.letter h1,
+.letter h2{
+font-size:24px;
+}
+
+.letter p{
+font-size:14px;
+}
+
+.glass h2{
+font-size:28px;
+}
+
+.glass p{
+font-size:16px;
+}
+
+#countdown div{
+width:80px;
+height:80px;
+}
+
+#countdown span{
+font-size:24px;
+}
+
+#countdown p{
+font-size:13px;
+}
+
+}
