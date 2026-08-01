@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>دعوة زفاف | جبران & رهف</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Marhey:wght@700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= الأصوات ================= -->
+
+
+<audio id="music" loop>
+
+<source src="assets/music.mp3" type="audio/mp3">
+
+</audio>
+
+
+<audio id="openSound">
+
+<source src="assets/envelope.mp3" type="audio/mp3">
+
+</audio>
+
+
+<audio id="fireSound">
+
+<source src="assets/fireworks.mp3" type="audio/mp3">
+
+</audio>
+
+
+
+<!-- زر الصوت -->
+
+<button id="soundBtn">
+
+🔇
+
+</button>
+
+
+
+<!-- ================= Loading ================= -->
+
+
+<div id="loading">
+
+<div class="loader"></div>
+
+<h3>
+جاري تجهيز الدعوة...
+</h3>
+
+</div>
+
+
+
+<!-- النجوم -->
+
+<div id="stars"></div>
+
+
+
+<!-- ================= الظرف ================= -->
+
+
+<section id="welcome">
+
+
+<div class="overlay"></div>
+
+
+<div class="envelopeContainer">
+
+
+<div class="envelope" id="envelope">
+
+
+<div class="envelopeTop"></div>
+
+
+
+<div class="letter">
+
+
+<h1>
+دعوة زفاف
+</h1>
+
+
+<p>
+اضغط لفتح الدعوة
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= الصفحة الرئيسية ================= -->
+
+
+<section id="home">
+
+
+<div class="heroOverlay">
+
+
+<h3>
+بسم الله الرحمن الرحيم
+</h3>
+
+
+<h1>
+
+<span class="typing">
+جبران
+</span>
+
+
+<span class="heart">
+♡
+</span>
+
+
+<span class="typing">
+رهف
+</span>
+
+
+</h1>
+
+
+
+<p>
+
+يسرنا دعوتكم لمشاركتنا أجمل لحظات العمر
+
+</p>
+
+
+
+<div class="scrollDown">
+
+↓
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= الرسالة ================= -->
+
+
+<section class="message">
+
+
+<div class="glass">
+
+
+<h2>
+دعوة كريمة
+</h2>
+
+
+<p>
+
+
+بكل الحب والسعادة...
+
+يسرنا أن ندعوكم لحضور حفل زفافنا
+
+ومشاركتنا أجمل ليلة في حياتنا
+
+فحضوركم شرف لنا
+
+وسعادة لا تكتمل إلا بوجودكم
+
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= قصة العروسين ================= -->
+
+
+<section class="story">
+
+
+<div class="glass">
+
+
+<h2>
+قصتنا
+</h2>
+
+
+<p>
+
+بدأت حكايتنا بلقاء جمع بين قلبين،
+
+واليوم نحتفل ببداية أجمل فصل من حياتنا.
+
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= صورة العروسين ================= -->
+
+
+<section class="couple">
+
+
+<div class="imageOverlay">
+
+
+<h1>
+
+جبران
+
+<span>
+❤
+</span>
+
+رهف
+
+
+</h1>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= معرض الصور ================= -->
+
+
+<section class="gallery">
+
+
+<h2>
+ذكرياتنا
+</h2>
+
+
+<div class="photos">
+
+
+<img src="assets/photo1.jpg">
+
+<img src="assets/photo2.jpg">
+
+<img src="assets/photo3.jpg">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= التفاصيل ================= -->
+
+
+<section class="details">
+
+
+
+<div class="card">
+
+<h2>
+📅 التاريخ
+</h2>
+
+<p>
+10 / 10 / 2026
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+🕒 الوقت
+</h2>
+
+<p>
+7:00 مساءً
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>
+📍 المكان
+</h2>
+
+<p>
+قاعة المملكة
+</p>
+
+
+<a href="https://maps.google.com"
+target="_blank">
+
+فتح الموقع
+
+</a>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ================= العد التنازلي ================= -->
+
+
+<section class="countdownSection">
+
+
+<h1>
+الوقت المتبقي
+</h1>
+
+
+
+<div id="countdown">
+
+
+
+<div>
+
+<span id="days">
+00
+</span>
+
+<p>
+يوم
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<span id="hours">
+00
+</span>
+
+<p>
+ساعة
+</p>
+
+</div>
+
+
+
+
+
+<div>
+
+<span id="minutes">
+00
+</span>
+
+<p>
+دقيقة
+</p>
+
+</div>
+
+
+
+
+
+<div>
+
+<span id="seconds">
+00
+</span>
+
+<p>
+ثانية
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= النهاية ================= -->
+
+
+<section class="end">
+
+
+<h1>
+حضوركم يزيد فرحتنا
+</h1>
+
+
+<p>
+ننتظركم بكل حب
+</p>
+
+
+</section>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
