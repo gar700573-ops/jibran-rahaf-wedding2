@@ -663,3 +663,33 @@ observer.observe(section);
 
 
 });
+/* ================= إيقاف الموسيقى عند مغادرة الصفحة ================= */
+
+document.addEventListener("visibilitychange", () => {
+
+    if (document.hidden) {
+
+        music.pause();
+
+        musicPlaying = false;
+
+        soundBtn.innerHTML = "🔇";
+
+    } else {
+
+        // إذا رجع المستخدم للموقع لا تشغل الموسيقى تلقائياً
+        // احتراماً لسياسات المتصفحات.
+    }
+
+});
+window.addEventListener("pagehide", () => {
+
+    music.pause();
+
+});
+
+window.addEventListener("beforeunload", () => {
+
+    music.pause();
+
+});
